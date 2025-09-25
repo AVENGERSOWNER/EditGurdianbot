@@ -18,15 +18,15 @@ buttons = [
     [
         InlineKeyboardButton(
             text="𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽",
-            url=f"https://t.me/EditGuardian_xdBot?startgroup=true",
+            url=f"http://t.me/EditGuardianOpBot?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="𝗦𝘂𝗽𝗽𝗼𝗿𝘁", url=f"https://t.me/TheSupportTalk"),
-        InlineKeyboardButton(text="𝗦𝗼𝘂𝗿𝗰𝗲", url=f"https://github.com/AMANTYA1"),
+        InlineKeyboardButton(text="𝗦𝘂𝗽𝗽𝗼𝗿𝘁", url=f"https://t.me/+ijVUQc7TNEUwNmNl"),
+        InlineKeyboardButton(text="𝗨𝗽𝗱𝗮𝘁𝗲", url=f"https://t.me/AvengersNetwork"),
     ],    
     [
-        InlineKeyboardButton(text="𝗢𝘄𝗻𝗲𝗿", url=f"https://t.me/NULLCROW"),
+        InlineKeyboardButton(text="𝗢𝘄𝗻𝗲𝗿", url=f"t.me/iTzAvengers"),
     ],
     
 ]
