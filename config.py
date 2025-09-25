@@ -1,21 +1,27 @@
-API_ID = "4014305"
+import os
 
-API_HASH = "b0cb9e17b2b8bcde3be7161c8bfa6013"
+API_ID = int(os.getenv("API_ID", "4014305"))
+API_HASH = os.getenv("API_HASH", "b0cb9e17b2b8bcde3be7161c8bfa6013")
 
 # Telegram bot token
-TELEGRAM_TOKEN = ""
+BOT_TOKEN = os.getenv("BOT_TOKEN", "7614975010:AAFRSSPowfzrOfCfgKE0xAD0FmEMhZZ8JFE")
 
 # Your telegram user ID (owner)
-OWNER_ID = 5817544006
+OWNER_ID = int(os.getenv("OWNER_ID", "5817544006"))
 
-SUDO_ID = [1669178360, 7642159940, 6128266949]
+# Sudo users (comma separated in Heroku config)
+SUDO_ID = list(map(int, os.getenv("SUDO_ID", "1669178360,7642159940,6128266949").split(",")))
 
-MONGO_URI = "mongodb+srv://bikash:bikash@bikash.3jkvhp7.mongodb.net/?retryWrites=true&w=majority"
+# MongoDB connection
+MONGO_URI = os.getenv(
+    "MONGO_URI",
+    "mongodb+srv://bikash:bikash@bikash.3jkvhp7.mongodb.net/?retryWrites=true&w=majority"
+)
 
-DB_NAME = "Nullcrow"
+DB_NAME = os.getenv("DB_NAME", "Nullcrow")
 
-LOGGER = True
+LOGGER = os.getenv("LOGGER", "True").lower() in ["true", "1", "yes"]
 
-BOT_NAME = "Edit Guardian"
+BOT_NAME = os.getenv("BOT_NAME", "Edit Guardian")
 
-SUPPORT_ID = (-1001515594503)
+SUPPORT_ID = int(os.getenv("SUPPORT_ID", "-1001515594503"))
