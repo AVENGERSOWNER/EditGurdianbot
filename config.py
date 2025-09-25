@@ -4,7 +4,7 @@ API_ID = int(os.getenv("API_ID", "4014305"))
 API_HASH = os.getenv("API_HASH", "b0cb9e17b2b8bcde3be7161c8bfa6013")
 
 # Telegram bot token
-BOT_TOKEN = os.getenv("BOT_TOKEN", "7614975010:AAFRSSPowfzrOfCfgKE0xAD0FmEMhZZ8JFE")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "7614975010:AAFRSSPowfzrOfCfgKE0xAD0FmEMhZZ8JFE")
 
 # Your telegram user ID (owner)
 OWNER_ID = int(os.getenv("OWNER_ID", "5817544006"))
